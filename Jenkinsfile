@@ -14,11 +14,6 @@ pipeline {
                 echo "groovy baby"
                 echo "inside shell block"
                 '''
-
-                python '''
-                print ("hi")
-                '''
-
             }
 
         }
