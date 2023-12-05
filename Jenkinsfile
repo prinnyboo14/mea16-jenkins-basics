@@ -41,7 +41,7 @@ pipeline {
             steps {
                 post {
                     always {
-                        archiveArtifacts *.zip
+                        archiveArtifacts "*.zip"
                     }
                 }
             }
