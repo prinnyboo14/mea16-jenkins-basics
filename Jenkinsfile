@@ -38,9 +38,11 @@ pipeline {
 
         stage('Post actions') {
 
-            post {
-                always {
-                    archiveArtifacts *.zip
+            steps {
+                post {
+                    always {
+                        archiveArtifacts *.zip
+                    }
                 }
             }
         }
